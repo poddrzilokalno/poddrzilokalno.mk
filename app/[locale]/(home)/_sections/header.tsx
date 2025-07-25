@@ -1,5 +1,5 @@
 import { Banner } from "../_components/banner";
-import { Navbar } from "../_components/navbar";
+import { Navbar } from "../_components/navbar/navbar";
 
 export const Header = () => {
   return (
