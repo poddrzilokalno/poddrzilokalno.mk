@@ -51,7 +51,7 @@ export const MobileNavbarMenu = ({
           <Image src={Logo} alt="Logo" height={30} />
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-4 flex-grow">
+        <div className="flex flex-col items-center justify-start gap-4 flex-grow">
           {navbarRoutes.map((route, index) => (
             <NavbarItem
               key={index}
@@ -63,10 +63,10 @@ export const MobileNavbarMenu = ({
               }}
             />
           ))}
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center cursor-pointer tracking-tight transform hover:scale-105 transition-transform duration-300">
-            Почни веднаш
-          </button>
         </div>
+        <button className="bg-blue-500 text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center cursor-pointer tracking-tight transform hover:scale-105 transition-transform duration-300">
+          Почни веднаш
+        </button>
       </div>
     </div>
   );
