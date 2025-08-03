@@ -1,5 +1,16 @@
 {
-    "HomePage": {
-        "title": "Здраво"
+  "home": {
+    "header": {
+      "logo": "Поддржи Локално",
+      "navbar": {
+        "portfolio": "Портфолио",
+        "services": "Услуги",
+        "about": "Зошто Ние",
+        "contact": "Контакт"
+      },
+      "ctaButtonSection": {
+        "text": "Закажи повик"
+      }
     }
+  }
 }
