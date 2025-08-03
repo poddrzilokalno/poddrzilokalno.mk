@@ -1,11 +1,9 @@
-import { useTranslations } from "next-intl";
+import Header from "@/components/header/header";
 
 export default function Home() {
-  const t = useTranslations("HomePage");
-
   return (
-    <div className="bg-secondary">
-      <h1>{t("title")}</h1>
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
