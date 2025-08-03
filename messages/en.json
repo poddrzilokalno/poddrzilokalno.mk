@@ -1,5 +1,16 @@
 {
-    "HomePage": {
-        "title": "Hello"
+  "home": {
+    "header": {
+      "logo": "Support Local",
+      "navbar": {
+        "portfolio": "Portfolio",
+        "services": "Services",
+        "about": "Why Us",
+        "contact": "Contact"
+      },
+      "ctaButtonSection": {
+        "text": "Book a Call"
+      }
     }
+  }
 }
