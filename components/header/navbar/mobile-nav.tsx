@@ -2,13 +2,12 @@
 
 import { MenuIcon, MountainIcon } from "lucide-react";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "../../ui/sheet";
-import { Button } from "../../ui/button";
 import { navbarLinks } from "@/const";
 import NavbarLink from "./navbar-links";
-import CtaButtonSection from "../cta-button-section/cta-button-section";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
+import CtaSection from "../../shared/cta-section/cta-section";
 
 const MobileNav = () => {
   const pathname = usePathname();
@@ -28,7 +27,6 @@ const MobileNav = () => {
           <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
 
           <div className="grid gap-0 p-12">
-
             {/* TODO: The actual logo should be placed here */}
             <div className="flex items-center gap-2 mb-6">
               <Link href="/" className="flex items-center justify-center gap-2">
@@ -59,7 +57,7 @@ const MobileNav = () => {
               );
             })}
             <div className="mt-6">
-              <CtaButtonSection />
+              <CtaSection buttonLabel={t("ctaSection.text")} />
             </div>
           </div>
         </SheetContent>
