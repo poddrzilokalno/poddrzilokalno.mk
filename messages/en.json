@@ -8,7 +8,17 @@
         "about": "Why Us",
         "contact": "Contact"
       },
-      "ctaButtonSection": {
+      "ctaSection": {
+        "text": "Book a Call"
+      }
+    },
+    "hero": {
+      "headline": {
+        "tagline": "local businesses supported",
+        "title": "Do you want <highlight>your business</highlight> to reach its <highlight>highest level?</highlight>",
+        "subtitle": "Work professionally. Look professional."
+      },
+      "ctaSection": {
         "text": "Book a Call"
       }
     }

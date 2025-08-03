@@ -1,16 +1,15 @@
 import { useTranslations } from "next-intl";
-import CtaButtonSection from "./cta-button-section/cta-button-section";
 import MobileNav from "./navbar/mobile-nav";
 import Navbar from "./navbar/navbar";
 import { MountainIcon } from "lucide-react";
 import Link from "next/link";
+import CtaSection from "../shared/cta-section/cta-section";
 
 const Header = () => {
   const t = useTranslations("home.header");
 
   return (
     <header className="bg-blue-500 flex h-20 w-full items-center justify-around px-4 md:px-6">
-      
       {/* TODO: The actual logo should be placed here */}
       <div className="flex items-center gap-2">
         <Link href="/" className="flex items-center justify-center gap-2">
@@ -24,7 +23,7 @@ const Header = () => {
       </div>
 
       <div className="hidden lg:flex">
-        <CtaButtonSection />
+        <CtaSection buttonLabel={t("ctaSection.text")} />
       </div>
 
       <MobileNav />

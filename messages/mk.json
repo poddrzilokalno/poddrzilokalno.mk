@@ -5,10 +5,20 @@
       "navbar": {
         "portfolio": "Портфолио",
         "services": "Услуги",
-        "about": "Зошто Ние",
+        "about": "Зошто ние",
         "contact": "Контакт"
       },
-      "ctaButtonSection": {
+      "ctaSection": {
+        "text": "Закажи повик"
+      }
+    },
+    "hero": {
+      "headline": {
+        "tagline": "поддржани локални бизниси",
+        "title": "Дали сакате <highlight>вашиот бизнис</highlight> да постигне <highlight>највисоко ниво?</highlight>",
+        "subtitle": "Работи професионално. Изгледај професионално"
+      },
+      "ctaSection": {
         "text": "Закажи повик"
       }
     }
