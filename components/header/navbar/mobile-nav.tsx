@@ -47,7 +47,7 @@ const MobileNav = () => {
                     ${
                       isActive
                         ? "bg-white text-primary font-semibold rounded-md"
-                        : "text-white hover:bg-white hover:text-primary hover:rounded-md px-2"
+                        : "text-white hover:bg-primary hover:rounded-md px-2"
                     }
                     ${index === navbarLinks.length - 1 ? "border-b-0" : ""} 
                   `}

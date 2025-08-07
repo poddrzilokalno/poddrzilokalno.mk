@@ -14,7 +14,7 @@ const Navbar = () => {
         {navbarLinks.map((link) => (
           <NavigationMenuItem key={link.href}>
             <NavbarLink
-              className={`${navigationMenuTriggerStyle()} bg-blue-500 text-white hover:bg-white hover:text-primary transition-colors duration-200`}
+              className={`${navigationMenuTriggerStyle()} bg-blue-500 text-white hover:bg-primary transition-colors duration-200`}
               href={link.href}
               content={link.content}
             />
