@@ -5,6 +5,8 @@ import { CalendarDays } from "lucide-react";
 import Magnet from "../animated/magnet";
 import AnimatedContent from "../animated/animated-content";
 import CountUp from "../animated/count-up";
+import LogoTicker from "../logo-ticker/logo-ticker";
+import TextType from "../animated/text-type";
 
 const HeroSection = () => {
   const t = useTranslations("home.hero");
@@ -14,7 +16,7 @@ const HeroSection = () => {
       <div className="container mx-auto mt-12">
         <div className="flex flex-col justify-center items-center gap-8 max-w-5xl mx-auto">
           <Magnet padding={50} disabled={false} magnetStrength={10}>
-            <div className="py-1 px-3 bg-gradient-to-r from-yellow-100 to-yellow-400 rounded-full text-neutral-950 font-semibold">
+            <div className="py-1 px-3 sm:py-1.5 sm:px-4 bg-gradient-to-r from-yellow-100 to-yellow-400 rounded-full text-neutral-950 font-semibold text-xs sm:text-sm md:text-base">
               🚀{" "}
               <CountUp
                 from={0}
@@ -46,11 +48,18 @@ const HeroSection = () => {
                 ),
               })}
             </h1>
-
-            <p className="mt-4 text-base sm:text-lg md:text-xl text-white/70 text-center">
-              {t("headline.subtitle")}
-            </p>
           </AnimatedContent>
+
+          <TextType
+            as={"h2"}
+            text={t("headline.subtitle")}
+            typingSpeed={75}
+            pauseDuration={1500}
+            showCursor={true}
+            cursorCharacter="|"
+            textColors={["text-white/70"]}
+            className="mt-4 text-base sm:text-lg md:text-xl text-white/70 text-center"
+          />
 
           <Magnet padding={50} disabled={false} magnetStrength={10}>
             <div>
@@ -61,6 +70,7 @@ const HeroSection = () => {
           </Magnet>
         </div>
       </div>
+      <LogoTicker />
     </section>
   );
 };
