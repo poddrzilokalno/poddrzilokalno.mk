@@ -1,8 +1,8 @@
 import React from "react";
 import Tag from "../shared/tag/tag";
 import { useTranslations } from "next-intl";
-import CompanyColumns from "./company-columns/company-columns";
 import { featuredCompanies } from "@/const";
+import CompanyColumns from "./company-columns/company-columns";
 
 const FeaturedCompaniesSection = () => {
   const t = useTranslations("home.featuredCompanies");

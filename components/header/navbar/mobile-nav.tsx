@@ -1,6 +1,6 @@
 "use client";
 
-import { MenuIcon, MountainIcon } from "lucide-react";
+import { MenuIcon } from "lucide-react";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "../../ui/sheet";
 import { navbarLinks } from "@/const";
 import NavbarLink from "./navbar-links";
@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import CtaSection from "../../shared/cta-section/cta-section";
 import Image from "next/image";
+import LanguageDropdown from "@/components/language/language-dropdown";
 
 const MobileNav = () => {
   const pathname = usePathname();
@@ -60,6 +61,9 @@ const MobileNav = () => {
             })}
             <div className="mt-6">
               <CtaSection buttonLabel={t("ctaSection.text")} />
+            </div>
+            <div className="mt-4 flex justify-center">
+              <LanguageDropdown />
             </div>
           </div>
         </SheetContent>
