@@ -3,10 +3,10 @@ import CtaButton from "../shared/cta-button/cta-button";
 import { useTranslations } from "next-intl";
 import { CalendarDays } from "lucide-react";
 import Magnet from "../animated/magnet";
-import AnimatedContent from "../animated/animated-content";
 import CountUp from "../animated/count-up";
 import LogoTicker from "../logo-ticker/logo-ticker";
 import TextType from "../animated/text-type";
+import AnimatedContent from "../animated/animated-content";
 
 const HeroSection = () => {
   const t = useTranslations("home.hero");
