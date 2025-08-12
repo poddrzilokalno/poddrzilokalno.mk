@@ -18,6 +18,7 @@ const Header = () => {
             height={160}
             src="/assets/logos/poddrzilokalno.png"
             alt="Poddrzi Lokalno Logo"
+            className="hover:scale-105 transition-transform duration-300"
           />
         </Link>
       </div>

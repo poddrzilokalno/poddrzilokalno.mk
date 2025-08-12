@@ -15,14 +15,17 @@
     "hero": {
       "headline": {
         "tagline": "поддржани локални бизниси",
-        "title": "Дали сакате <highlight>вашиот бизнис</highlight> да постигне <highlight>највисоко ниво?</highlight>",
+        "title": "Дали сакате <highlight>вашиот бизнис</highlight> да достигне <highlight>највисоко ниво?</highlight>",
         "subtitle": "Работи професионално. Изгледај професионално"
       },
       "ctaSection": {
         "text": "Закажи повик"
       }
     },
-     "featuredCompanies": {
+    "logoTicker": {
+      "title": "Брендови кои веруваат во нас"
+    },
+    "featuredCompanies": {
       "tagline": "Featured Companies"
     }
   }
