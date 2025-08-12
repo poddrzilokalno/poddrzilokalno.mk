@@ -8,6 +8,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import CtaSection from "../../shared/cta-section/cta-section";
+import Image from "next/image";
 
 const MobileNav = () => {
   const pathname = usePathname();
@@ -27,13 +28,14 @@ const MobileNav = () => {
           <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
 
           <div className="grid gap-0 p-12">
-            {/* TODO: The actual logo should be placed here */}
             <div className="flex items-center gap-2 mb-6">
               <Link href="/" className="flex items-center justify-center gap-2">
-                <MountainIcon className="h-6 w-6 text-primary" />
-                <span className="font-bold text-lg text-white">
-                  {t("logo")}
-                </span>
+                <Image
+                  width={160}
+                  height={160}
+                  src="/assets/logos/poddrzilokalno.png"
+                  alt="Poddrzi Lokalno Logo"
+                />
               </Link>
             </div>
 
