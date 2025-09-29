@@ -23,7 +23,7 @@
       }
     },
     "logoTicker": {
-      "title": "Brands that believe in us"
+      "title": "Partners and Clients"
     },
     "featuredCompanies": {
       "tagline": "Featured Businesses"
@@ -31,10 +31,11 @@
     "services": {
       "tagline": "Our Services",
       "title": "We provide <highlight>comprehensive solutions</highlight> for your business",
-      "description": "From web development to digital marketing, we offer everything you need to grow your business online.",
+      "description": "Don't know where to start?",
+      "ctaSection": "Book a Call",
       "items": {
-        "webDevelopment": {
-          "title": "Web Development",
+        "softwareSolutions": {
+          "title": "Software Solutions",
           "description": "Custom websites that convert visitors into customers with modern design and functionality.",
           "features": {
             "0": "Responsive Design",
@@ -45,102 +46,83 @@
         },
         "branding": {
           "title": "Brand Identity",
-          "description": "Create a memorable brand that stands out and connects with your target audience.",
+          "description": "Transform your business with an innovative and thoughtful branding.",
           "features": {
             "0": "Logo Design",
-            "1": "Brand Guidelines",
+            "1": "Brandbook",
             "2": "Visual Identity",
-            "3": "Marketing Materials"
+            "3": "Marketing/Ad Materials"
           }
         },
         "digitalMarketing": {
           "title": "Digital Marketing",
-          "description": "Reach more customers and grow your business with strategic digital marketing campaigns.",
+          "description": "Enhance your digital presence through strategically crafted content.",
           "features": {
-            "0": "Social Media Marketing",
-            "1": "Content Strategy",
-            "2": "Paid Advertising",
-            "3": "Analytics & Reporting"
+            "0": "Content Creation",
+            "1": "Content Management",
+            "2": "Social Media Management",
+            "3": ""
           }
         },
-        "ecommerce": {
-          "title": "E-commerce Solutions",
-          "description": "Complete online store solutions to sell your products and services online effectively.",
+        "events": {
+          "title": "Event Planning",
+          "description": "Event planning and management for all types of occasions.",
           "features": {
-            "0": "Online Store Setup",
-            "1": "Payment Integration",
-            "2": "Inventory Management",
-            "3": "Shipping Solutions"
-          }
-        },
-        "consulting": {
-          "title": "Business Consulting",
-          "description": "Strategic guidance to help you make informed decisions and optimize your business operations.",
-          "features": {
-            "0": "Business Strategy",
-            "1": "Process Optimization",
-            "2": "Team Training",
-            "3": "Ongoing Support"
-          }
-        },
-        "automation": {
-          "title": "Process Automation",
-          "description": "Streamline your business processes and increase efficiency with smart automation solutions.",
-          "features": {
-            "0": "Workflow Automation",
-            "1": "System Integration",
-            "2": "Efficiency Improvement",
-            "3": "Performance Reporting"
+            "0": "Strategy & Program Planning",
+            "1": "Budgeting",
+            "2": "Video Production",
+            "3": "Promotion"
           }
         }
       }
     },
     "portfolio": {
       "tagline": "Our Work",
-      "title": "See how we've helped <highlight>businesses grow</highlight>",
-      "description": "Explore our portfolio of successful projects and see the results we've achieved for our clients.",
+      "title": "How we help <highlight>businesses grow</highlight>.",
+      "ctaSection": "Book a meeting",
+      "description": "Check our portfolio of success and the results that we have achieved together with our clients.",
       "items": {
         "project1": {
-          "title": "Restaurant Website Redesign",
-          "description": "Modern, mobile-friendly website that increased online reservations by 150%.",
-          "category": "Web Development"
+          "title": "Learning Platform",
+          "description": "Modern website for Macedonia’s first online platform for student learning.",
+          "category": "eCode MK"
         },
         "project2": {
-          "title": "Fashion Brand Identity",
-          "description": "Complete brand identity design that helped establish market presence.",
-          "category": "Branding"
+          "title": "Visual Identity Creation",
+          "description": "Designing a calm and professional visual identity for a massage studio based in Skopje.",
+          "category": "Mr. Therapy"
         },
         "project3": {
           "title": "E-commerce Platform",
-          "description": "Custom online store that generated $100k+ in first year sales.",
-          "category": "E-commerce"
+          "description": "Developing a modern and functional e-shop for an authentic local brand.",
+          "category": "Funkogram MK"
         },
         "project4": {
-          "title": "Social Media Campaign",
-          "description": "Digital marketing campaign that increased brand awareness by 300%.",
-          "category": "Digital Marketing"
+          "title": "YouTube Content Creation",
+          "description": " Euroleague analysis for one of YouTube’s most prominent basketball content creators - Heat Check.",
+          "category": "Heat Check"
         },
         "project5": {
-          "title": "Business Optimization",
-          "description": "Consulting project that improved operational efficiency by 40%.",
-          "category": "Consulting"
+          "title": "Organazing a Sports Tournament",
+          "description": "Organazing and creating a development strategy for the first padel tournament in North Macedonia.",
+          "category": "Party and Padel"
         },
         "project6": {
-          "title": "Workflow Automation",
-          "description": "Automated processes that saved 20+ hours per week for the client.",
-          "category": "Automation"
+          "title": "Website Development",
+          "description": "Developing a blog and e-shop for Macedonia’s only street workout organization.",
+          "category": "Street Workout Macedonia"
         }
       }
     },
     "about": {
-      "tagline": "Why Choose Us",
+      "tagline": "Why Support Local",
       "title": "We are <highlight>passionate</highlight> about helping local businesses <highlight>succeed</highlight>",
-      "description": "With years of experience and a deep understanding of the local market, we provide tailored solutions that drive real results for your business.",
+      "description": "With years of experience and a deep understanding of the local and global market, we provide tailored solutions that drive real results for your business.",
       "features": {
         "0": "Expert team with proven track record",
-        "1": "24/7 support and maintenance",
+        "1": "24/7 support",
         "2": "Results-driven approach",
-        "3": "Cutting-edge technology solutions"
+        "3": "Innovative and up-to-date technological solutions"
       },
       "stats": {
         "0": {
@@ -157,39 +139,10 @@
     "contact": {
       "tagline": "Get In Touch",
       "title": "Ready to <highlight>grow your business?</highlight>",
-      "description": "Contact us today to discuss your project and see how we can help you achieve your business goals.",
-      "form": {
-        "name": "Full Name",
-        "namePlaceholder": "Enter your full name",
-        "email": "Email Address",
-        "emailPlaceholder": "Enter your email",
-        "company": "Company Name",
-        "companyPlaceholder": "Enter your company name",
-        "message": "Message",
-        "messagePlaceholder": "Tell us about your project...",
-        "submit": "Send Message"
-      },
-      "info": {
-        "title": "Let's Start a Conversation",
-        "description": "We're here to help you succeed. Reach out to us through any of the channels below.",
-        "email": {
-          "label": "Email Us"
-        },
-        "phone": {
-          "label": "Call Us"
-        },
-        "address": {
-          "label": "Visit Us",
-          "value": "Skopje, North Macedonia"
-        },
-        "hours": {
-          "label": "Business Hours",
-          "value": "Mon - Fri: 9:00 AM - 6:00 PM"
-        }
-      }
+      "description": "Contact us today to discuss your project ideas and see how we can help you achieve your business goals."
     },
     "footer": {
-      "description": "We help local businesses grow through professional web development, branding, and digital marketing services.",
+      "description": "Empowering local businesses to express their uniqueness with a wide range of development services.",
       "quickLinks": "Quick Links",
       "contact": "Contact Info",
       "address": "Skopje, North Macedonia",

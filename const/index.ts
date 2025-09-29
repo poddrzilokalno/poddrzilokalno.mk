@@ -1,11 +1,19 @@
-import { Globe, Palette, Search, ShoppingCart, Users, Zap } from "lucide-react"
+import {
+  Globe,
+  Palette,
+  PartyPopper,
+  Search,
+  ShoppingCart,
+  Users,
+  Zap,
+} from "lucide-react";
 
 export const navbarLinks = [
   { href: "#portfolio", content: "portfolio" },
   { href: "#services", content: "services" },
   { href: "#about", content: "about" },
   { href: "#contact", content: "contact" },
-]
+];
 
 export const featuredCompanies = [
   {
@@ -48,11 +56,11 @@ export const featuredCompanies = [
     logo: "/assets/logos/funkogram.jpg",
     description: "Leading provider of innovative solutions.",
   },
-]
+];
 
 export const services = [
   {
-    id: "webDevelopment",
+    id: "softwareSolutions",
     icon: Globe,
     features: ["responsive", "seo", "performance", "security"],
   },
@@ -67,70 +75,66 @@ export const services = [
     features: ["socialMedia", "contentMarketing", "ppc", "analytics"],
   },
   {
-    id: "ecommerce",
-    icon: ShoppingCart,
+    id: "events",
+    icon: PartyPopper,
     features: ["onlineStore", "paymentGateway", "inventory", "shipping"],
   },
-  {
-    id: "consulting",
-    icon: Users,
-    features: ["strategy", "optimization", "training", "support"],
-  },
-  {
-    id: "automation",
-    icon: Zap,
-    features: ["workflow", "integration", "efficiency", "reporting"],
-  },
-]
+];
 
 export const portfolioItems = [
   {
     id: "project1",
     image: "/modern-restaurant-website.png",
-    category: "webDevelopment",
+    category: "eCode",
+    link: "https://ecode.mk/",
   },
   {
     id: "project2",
     image: "/fashion-brand-logo.png",
-    category: "branding",
+    category: "mrtherapy",
+    link: "https://www.instagram.com/p/DIEercbsSgX/?img_index=1",
   },
   {
     id: "project3",
     image: "/ecommerce-online-store-interface.png",
-    category: "ecommerce",
+    category: "funkogram",
+    link: "https://funkogram.mk/",
   },
   {
     id: "project4",
     image: "/social-media-campaign.png",
-    category: "digitalMarketing",
+    category: "heatchek",
+    link: "https://www.youtube.com/@HeatCheck",
   },
   {
     id: "project5",
     image: "/business-consulting-dashboard.png",
-    category: "consulting",
+    category: "partyandpadel",
+    link: "https://www.instagram.com/p/DLrsX8moiRz/",
   },
   {
     id: "project6",
     image: "/workflow-automation-system.png",
-    category: "automation",
+    category: "swm",
+    link: "https://streetworkoutmacedonia.mk/",
   },
-]
+];
 
 export const images = [
   { id: 1, img: "/assets/photo.jpg" },
   { id: 2, img: "/assets/photo.jpg" },
   { id: 3, img: "/assets/photo.jpg" },
-  { id: 4, img: "/assets/photo.jpg" }
+  { id: 4, img: "/assets/photo.jpg" },
 ];
 
 export const aboutStats = [
-  { id: "clients", value: 150, suffix: "+" },
-  { id: "projects", value: 300, suffix: "+" },
-  { id: "experience", value: 5, suffix: "" },
-]
+  { id: "clients", value: 50, suffix: "+" },
+  { id: "projects", value: 150, suffix: "+" },
+  { id: "experience", value: 3, suffix: "" },
+];
 
-export const aboutFeatures = ["expertise", "support", "results", "innovation"]
+export const aboutFeatures = ["expertise", "support", "results", "innovation"];
 
-export type FeaturedCompanies = typeof featuredCompanies
-export type Service = (typeof services)[0]
-export type PortfolioItem = (typeof portfolioItems)[0]
+export type FeaturedCompanies = typeof featuredCompanies;
+export type Service = (typeof services)[0];
+export type PortfolioItem = (typeof portfolioItems)[0];

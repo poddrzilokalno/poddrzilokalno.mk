@@ -27,7 +27,7 @@ const AboutSection = () => {
               duration={1.2}
               delay={0.2}
             >
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-neutral-950 mt-6">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-neutral-950 mt-6">
                 {t.rich("title", {
                   highlight: (chunks) => (
                     <span className="text-blue-500">{chunks}</span>
@@ -37,7 +37,7 @@ const AboutSection = () => {
             </AnimatedContent>
 
             <FadeContent delay={600} duration={1000}>
-              <p className="mt-6 text-lg text-neutral-600 leading-relaxed">
+              <p className="mt-6 text-lg font-medium text-neutral-600 leading-relaxed">
                 {t("description")}
               </p>
             </FadeContent>
@@ -51,7 +51,7 @@ const AboutSection = () => {
                 >
                   <div className="flex items-center gap-3">
                     <CheckCircle className="w-6 h-6 text-blue-500 flex-shrink-0" />
-                    <span className="text-neutral-700">
+                    <span className="text-neutral-700 font-medium">
                       {t(`features.${index}`)}
                     </span>
                   </div>

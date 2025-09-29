@@ -1,21 +1,40 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useTranslations } from "next-intl"
-import Image from "next/image"
-import Link from "next/link"
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin } from "lucide-react"
-import { navbarLinks } from "@/const"
+import { useTranslations } from "next-intl";
+import Image from "next/image";
+import Link from "next/link";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
+import { navbarLinks } from "@/const";
 
 const Footer = () => {
-  const t = useTranslations("home.footer")
+  const t = useTranslations("home.footer");
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-  ]
+    {
+      icon: Facebook,
+      href: "https://www.facebook.com/profile.php?id=100090064227716",
+      label: "Facebook",
+    },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/poddrzilokalno/",
+      label: "Instagram",
+    },
+    {
+      icon: Linkedin,
+      href: "https://www.linkedin.com/in/aleksandar-gavrilovski-11a107274/",
+      label: "LinkedIn",
+    },
+  ];
 
   return (
     <footer className="bg-neutral-950 text-white py-16">
@@ -31,7 +50,9 @@ const Footer = () => {
                 className="brightness-0 invert"
               />
             </Link>
-            <p className="text-neutral-400 mb-6 max-w-md leading-relaxed">{t("description")}</p>
+            <p className="text-neutral-400 mb-6 max-w-md leading-relaxed">
+              {t("description")}
+            </p>
             <div className="flex gap-4">
               {socialLinks.map((social) => (
                 <Link
@@ -50,23 +71,27 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6">{t("quickLinks")}</h3>
             <ul className="space-y-3">
               {navbarLinks.map((link) => {
-                const handleFooterClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-                  e.preventDefault()
+                const handleFooterClick = (
+                  e: React.MouseEvent<HTMLAnchorElement>
+                ) => {
+                  e.preventDefault();
 
-                  const targetId = link.href.replace("#", "")
-                  const targetElement = document.getElementById(targetId)
+                  const targetId = link.href.replace("#", "");
+                  const targetElement = document.getElementById(targetId);
 
                   if (targetElement) {
-                    const headerOffset = 80
-                    const elementPosition = targetElement.getBoundingClientRect().top
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset
+                    const headerOffset = 80;
+                    const elementPosition =
+                      targetElement.getBoundingClientRect().top;
+                    const offsetPosition =
+                      elementPosition + window.pageYOffset - headerOffset;
 
                     window.scrollTo({
                       top: offsetPosition,
                       behavior: "smooth",
-                    })
+                    });
                   }
-                }
+                };
 
                 return (
                   <li key={link.href}>
@@ -78,7 +103,7 @@ const Footer = () => {
                       {t(`links.${link.content}`)}
                     </Link>
                   </li>
-                )
+                );
               })}
             </ul>
           </div>
@@ -92,7 +117,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-blue-500" />
-                <span className="text-neutral-400">+389 70 123 456</span>
+                <span className="text-neutral-400">+389 70 848 944</span>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-blue-500 mt-0.5" />
@@ -106,10 +131,16 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-neutral-400 text-sm">© 2024 {t("copyright")}</p>
             <div className="flex gap-6 text-sm">
-              <Link href="#" className="text-neutral-400 hover:text-white transition-colors duration-200">
+              <Link
+                href="#"
+                className="text-neutral-400 hover:text-white transition-colors duration-200"
+              >
                 {t("privacy")}
               </Link>
-              <Link href="#" className="text-neutral-400 hover:text-white transition-colors duration-200">
+              <Link
+                href="#"
+                className="text-neutral-400 hover:text-white transition-colors duration-200"
+              >
                 {t("terms")}
               </Link>
             </div>
@@ -117,7 +148,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

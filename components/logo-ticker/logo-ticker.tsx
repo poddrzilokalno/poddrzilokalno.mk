@@ -11,7 +11,7 @@ const LogoTicker = () => {
 
   return (
     <section className="bg-blue-500 pt-26 overflow-x-clip">
-      <div className="container">
+      <div>
         <h3 className="text-base sm:text-lg md:text-xl text-white/70 text-center">
           {t("title")}
         </h3>
