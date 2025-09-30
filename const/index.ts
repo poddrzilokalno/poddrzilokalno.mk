@@ -130,7 +130,7 @@ export const images = [
 export const aboutStats = [
   { id: "clients", value: 50, suffix: "+" },
   { id: "projects", value: 150, suffix: "+" },
-  { id: "experience", value: 3, suffix: "" },
+  { id: "experience", value: 3, suffix: "+" },
 ];
 
 export const aboutFeatures = ["expertise", "support", "results", "innovation"];
