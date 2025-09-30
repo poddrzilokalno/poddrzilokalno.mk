@@ -1,20 +1,35 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { aboutStats, aboutFeatures } from "@/const";
+import { aboutStats, aboutFeatures, images } from "@/const";
 import { CheckCircle } from "lucide-react";
-import Image from "next/image";
 import AnimatedContent from "../animated/animated-content";
 import CountUp from "../animated/count-up";
 import FadeContent from "../animated/fade-content";
 import Tag from "../shared/tag/tag";
+import Stack from "../Stack";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 const AboutSection = () => {
   const t = useTranslations("home.about");
+  const isLarge = useMediaQuery("(min-width: 1024px)");
+  const isMedium = useMediaQuery("(min-width: 768px)");
+  const isSmall = useMediaQuery("(min-width: 640px)");
+
+  let cardDimensions;
+  if (isLarge) {
+    cardDimensions = { width: 550, height: 450 };
+  } else if (isMedium) {
+    cardDimensions = { width: 400, height: 300 };
+  } else if (isSmall) {
+    cardDimensions = { width: 350, height: 250 };
+  } else {
+    cardDimensions = { width: 250, height: 150 };
+  }
 
   return (
     <section className="py-24 bg-white" id="about">
-      <div className="container mx-auto px-16">
+      <div className="container mx-auto px-4 md:px-16">
         <div className="grid lg:grid-cols-2 gap-16 md:gap-32 items-center">
           <div>
             <AnimatedContent distance={100} direction="horizontal" duration={1}>
@@ -84,8 +99,7 @@ const AboutSection = () => {
               ))}
             </div>
           </div>
-
-          <div className="relative">
+          <div className="relative flex justify-center items-center">
             <AnimatedContent
               distance={150}
               direction="horizontal"
@@ -93,16 +107,13 @@ const AboutSection = () => {
               duration={1.5}
               delay={0.5}
             >
-              <div className="relative">
-                <div className="absolute inset-0 max-w-xl bg-gradient-to-br from-blue-500 to-secondary rounded-3xl transform rotate-6"></div>
-                <Image
-                  src="/assets/photo.jpg"
-                  alt="About us"
-                  width={500}
-                  height={600}
-                  className="relative rounded-3xl shadow-2xl"
-                />
-              </div>
+              <Stack
+                randomRotation={true}
+                sensitivity={180}
+                sendToBackOnClick={false}
+                cardDimensions={cardDimensions}
+                cardsData={images}
+              />
             </AnimatedContent>
           </div>
         </div>

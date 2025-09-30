@@ -25,7 +25,7 @@ const ContactSection = () => {
             duration={1.2}
             delay={0.2}
           >
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-white mt-6">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white mt-6">
               {t.rich("contact.title", {
                 highlight: (chunks) => (
                   <span className="text-secondary">{chunks}</span>
@@ -35,7 +35,7 @@ const ContactSection = () => {
           </AnimatedContent>
 
           <FadeContent delay={600} duration={1000}>
-            <p className="mt-6 text-lg text-white/70">
+            <p className="mt-6 text-lg font-medium text-white/70">
               {t("contact.description")}
             </p>
           </FadeContent>
