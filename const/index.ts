@@ -17,44 +17,24 @@ export const navbarLinks = [
 
 export const featuredCompanies = [
   {
-    name: "Company A",
-    logo: "/assets/logos/funkogram.jpg",
-    description: "Leading provider of innovative solutions.",
+    name: "Funkogram MK",
+    logo: "/assets/logos/funkogram.svg",
   },
   {
-    name: "Company B",
-    logo: "/assets/logos/funkogram.jpg",
-    description: "Leading provider of innovative solutions.",
+    name: "FIBA",
+    logo: "/assets/logos/fiba.png",
   },
   {
-    name: "Company C",
-    logo: "/assets/logos/funkogram.jpg",
-    description: "Leading provider of innovative solutions.",
+    name: "Heat Check",
+    logo: "/assets/logos/heat-check.png",
   },
   {
-    name: "Company D",
-    logo: "/assets/logos/funkogram.jpg",
-    description: "Leading provider of innovative solutions.",
+    name: "Street Workout Macedonia",
+    logo: "/assets/logos/swm.PNG",
   },
   {
-    name: "Company E",
-    logo: "/assets/logos/funkogram.jpg",
-    description: "Leading provider of innovative solutions.",
-  },
-  {
-    name: "Company F",
-    logo: "/assets/logos/funkogram.jpg",
-    description: "Leading provider of innovative solutions.",
-  },
-  {
-    name: "Company G",
-    logo: "/assets/logos/funkogram.jpg",
-    description: "Leading provider of innovative solutions.",
-  },
-  {
-    name: "Company H",
-    logo: "/assets/logos/funkogram.jpg",
-    description: "Leading provider of innovative solutions.",
+    name: "Mr. Therapy",
+    logo: "/assets/logos/mr-therapy.png",
   },
 ];
 

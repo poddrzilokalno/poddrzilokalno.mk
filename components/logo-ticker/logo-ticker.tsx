@@ -30,13 +30,18 @@ const LogoTicker = () => {
             {Array.from({ length: 2 }).map((_, i) => (
               <Fragment key={i}>
                 {featuredCompanies.map((company) => (
-                  <Image
+                  <div
                     key={company.name}
-                    width={80}
-                    height={80}
-                    src={company.logo}
-                    alt={company.name}
-                  />
+                    className="w-32 h-32s flex items-center justify-center bg-transparent"
+                  >
+                    <Image
+                      src={company.logo}
+                      alt={company.name}
+                      width={100}
+                      height={100}
+                      className="object-contain w-full h-full"
+                    />
+                  </div>
                 ))}
               </Fragment>
             ))}
