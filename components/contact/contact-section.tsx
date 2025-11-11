@@ -7,6 +7,7 @@ import FadeContent from "../animated/fade-content";
 import Magnet from "../animated/magnet";
 import Tag from "../shared/tag/tag";
 import CtaButton from "../shared/cta-button/cta-button";
+import Link from "next/link";
 
 const ContactSection = () => {
   const t = useTranslations("home");
@@ -42,9 +43,15 @@ const ContactSection = () => {
 
           <div className="mt-12 flex justify-center items-center">
             <Magnet padding={50} disabled={false} magnetStrength={10}>
-              <CtaButton icon={<CalendarDays className="h-4 w-4" />}>
-                {t("header.ctaSection.text")}
-              </CtaButton>
+              <Link
+                href="https://cal.com/supportlocal/30min?user=supportlocal&overlayCalendar=true"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <CtaButton icon={<CalendarDays className="h-4 w-4" />}>
+                  {t("header.ctaSection.text")}
+                </CtaButton>
+              </Link>
             </Magnet>
           </div>
         </div>
