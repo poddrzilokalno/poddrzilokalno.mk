@@ -9,6 +9,7 @@ import Tag from "../shared/tag/tag";
 import Magnet from "../animated/magnet";
 import CtaButton from "../shared/cta-button/cta-button";
 import { CalendarDays } from "lucide-react";
+import Link from "next/link";
 
 const ServicesSection = () => {
   const t = useTranslations("home.services");
@@ -44,9 +45,15 @@ const ServicesSection = () => {
 
           <Magnet padding={50} disabled={false} magnetStrength={10}>
             <div className="mt-8">
-              <CtaButton icon={<CalendarDays className="h-4 w-4" />}>
-                {t("ctaSection")}
-              </CtaButton>
+              <Link
+                href="https://cal.com/supportlocal/30min?user=supportlocal&overlayCalendar=true"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <CtaButton icon={<CalendarDays className="h-4 w-4" />}>
+                  {t("ctaSection")}
+                </CtaButton>
+              </Link>
             </div>
           </Magnet>
         </div>

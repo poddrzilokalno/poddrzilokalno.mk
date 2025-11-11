@@ -9,6 +9,7 @@ import Tag from "../shared/tag/tag";
 import Magnet from "../animated/magnet";
 import CtaButton from "../shared/cta-button/cta-button";
 import { CalendarDays } from "lucide-react";
+import Link from "next/link";
 
 const PortfolioSection = () => {
   const t = useTranslations("home.portfolio");
@@ -37,7 +38,9 @@ const PortfolioSection = () => {
           </AnimatedContent>
 
           <FadeContent delay={600} duration={1000}>
-            <p className="mt-6 text-lg font-medium text-white/70">{t("description")}</p>
+            <p className="mt-6 text-lg font-medium text-white/70">
+              {t("description")}
+            </p>
           </FadeContent>
         </div>
 
@@ -52,9 +55,15 @@ const PortfolioSection = () => {
         <div className="flex items-center justify-center mt-12">
           <Magnet padding={50} disabled={false} magnetStrength={10}>
             <div>
-              <CtaButton icon={<CalendarDays className="h-4 w-4" />}>
-                {t("ctaSection")}
-              </CtaButton>
+              <Link
+                href="https://cal.com/supportlocal/30min?user=supportlocal&overlayCalendar=true"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <CtaButton icon={<CalendarDays className="h-4 w-4" />}>
+                  {t("ctaSection")}
+                </CtaButton>
+              </Link>
             </div>
           </Magnet>
         </div>

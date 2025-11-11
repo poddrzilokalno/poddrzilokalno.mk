@@ -7,6 +7,7 @@ import CountUp from "../animated/count-up";
 import LogoTicker from "../logo-ticker/logo-ticker";
 import TextType from "../animated/text-type";
 import AnimatedContent from "../animated/animated-content";
+import Link from "next/link";
 
 const HeroSection = () => {
   const t = useTranslations("home.hero");
@@ -63,9 +64,15 @@ const HeroSection = () => {
 
           <Magnet padding={50} disabled={false} magnetStrength={10}>
             <div>
-              <CtaButton icon={<CalendarDays className="h-4 w-4" />}>
-                {t("ctaSection.text")}
-              </CtaButton>
+              <Link
+                href="https://cal.com/supportlocal/30min?user=supportlocal&overlayCalendar=true"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <CtaButton icon={<CalendarDays className="h-4 w-4" />}>
+                  {t("ctaSection.text")}
+                </CtaButton>
+              </Link>
             </div>
           </Magnet>
         </div>
