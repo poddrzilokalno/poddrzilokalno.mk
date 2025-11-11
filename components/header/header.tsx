@@ -27,7 +27,13 @@ const Header = () => {
       </div>
 
       <div className="hidden lg:flex items-center gap-4">
-        <CtaSection buttonLabel={t("ctaSection.text")} />
+        <Link
+          href="https://cal.com/supportlocal/30min?user=supportlocal&overlayCalendar=true"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <CtaSection buttonLabel={t("ctaSection.text")} />
+        </Link>
         <LanguageDropdown />
       </div>
 
