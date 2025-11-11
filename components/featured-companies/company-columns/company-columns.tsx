@@ -12,14 +12,18 @@ interface CompanyColumsProps {
   reverse?: boolean;
 }
 
-const CompanyColumns = ({ companies, className, reverse }: CompanyColumsProps) => {
+const CompanyColumns = ({
+  companies,
+  className,
+  reverse,
+}: CompanyColumsProps) => {
   return (
     <motion.div
-    initial={{
-      y: reverse ? "-50%" : 0
-    }}
+      initial={{
+        y: reverse ? "-50%" : 0,
+      }}
       animate={{
-        y: reverse ? 0: "-50%",
+        y: reverse ? 0 : "-50%",
       }}
       transition={{
         duration: 40,
@@ -47,9 +51,6 @@ const CompanyColumns = ({ companies, className, reverse }: CompanyColumsProps) =
               <h3 className="text-3xl text-white font-medium text-center mt-6">
                 {company.name}
               </h3>
-              <p className="text-center text-white/70 mt-2">
-                {company.description}
-              </p>
             </div>
           ))}
         </Fragment>
