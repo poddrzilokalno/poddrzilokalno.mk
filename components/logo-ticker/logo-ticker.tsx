@@ -21,13 +21,13 @@ const LogoTicker = () => {
               x: "-50%",
             }}
             transition={{
-              duration: 20,
+              duration: 25,
               ease: "linear",
               repeat: Infinity,
             }}
             className="flex flex-none gap-24"
           >
-            {Array.from({ length: 2 }).map((_, i) => (
+            {Array.from({ length: 4 }).map((_, i) => (
               <Fragment key={i}>
                 {featuredCompanies.map((company) => (
                   <div
