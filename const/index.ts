@@ -93,10 +93,10 @@ export const portfolioItems = [
 ];
 
 export const images = [
-  { id: 1, img: "/assets/photo.jpg" },
-  { id: 2, img: "/assets/photo.jpg" },
-  { id: 3, img: "/assets/photo.jpg" },
-  { id: 4, img: "/assets/photo.jpg" },
+  { id: 1, img: "/assets/pl1.jpg" },
+  { id: 2, img: "/assets/pl2.jpg" },
+  { id: 3, img: "/assets/pl3.jpg" },
+  { id: 4, img: "/assets/pl4.jpg" },
 ];
 
 export const aboutStats = [
