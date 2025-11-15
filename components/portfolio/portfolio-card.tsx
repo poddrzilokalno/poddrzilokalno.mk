@@ -20,10 +20,10 @@ const PortfolioCard = ({ item }: PortfolioCardProps) => {
         <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl overflow-hidden hover:bg-white/20 transition-all duration-300 group">
           <div className="relative h-48 overflow-hidden">
             <Image
-              src={item.image || "/placeholder.svg"}
+              src={item.desktopImage || "/placeholder.svg"}
               alt={t(`${item.id}.title`)}
               fill
-              className="object-cover group-hover:scale-110 transition-transform duration-500"
+              className="object-contain group-hover:scale-110 transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

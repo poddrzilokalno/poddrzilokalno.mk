@@ -1,12 +1,4 @@
-import {
-  Globe,
-  Palette,
-  PartyPopper,
-  Search,
-  ShoppingCart,
-  Users,
-  Zap,
-} from "lucide-react";
+import { Globe, Palette, PartyPopper, Search } from "lucide-react";
 
 export const navbarLinks = [
   { href: "#portfolio", content: "portfolio" },
@@ -64,37 +56,37 @@ export const services = [
 export const portfolioItems = [
   {
     id: "project1",
-    image: "/modern-restaurant-website.png",
+    desktopImage: "/assets/logos/ecode.png",
     category: "eCode",
     link: "https://ecode.mk/",
   },
   {
     id: "project2",
-    image: "/fashion-brand-logo.png",
+    desktopImage: "/assets/logos/mr-therapy.png",
     category: "mrtherapy",
     link: "https://www.instagram.com/p/DIEercbsSgX/?img_index=1",
   },
   {
     id: "project3",
-    image: "/ecommerce-online-store-interface.png",
+    desktopImage: "/assets/logos/funkogram.svg",
     category: "funkogram",
     link: "https://funkogram.mk/",
   },
   {
     id: "project4",
-    image: "/social-media-campaign.png",
+    desktopImage: "/assets/logos/heat-check.png",
     category: "heatchek",
     link: "https://www.youtube.com/@HeatCheck",
   },
   {
     id: "project5",
-    image: "/business-consulting-dashboard.png",
+    desktopImage: "/assets/logos/party-and-padel.png",
     category: "partyandpadel",
     link: "https://www.instagram.com/p/DLrsX8moiRz/",
   },
   {
     id: "project6",
-    image: "/workflow-automation-system.png",
+    desktopImage: "/assets/logos/swm.PNG",
     category: "swm",
     link: "https://streetworkoutmacedonia.mk/",
   },
